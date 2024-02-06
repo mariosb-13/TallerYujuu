@@ -1,5 +1,8 @@
 <?php
 	require 'conexion.php';
+    $matricula=$_GET['matricula'];
+        $sql= "Select matricula from coches";
+        $res= $mysqli->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -19,5 +22,5 @@
             Año: <input type="number" id="año" name="año"><br>
             Color: <input type="color" id="color" name="color"><br>
     </form>
-</body>
+  </body>
 </html>
