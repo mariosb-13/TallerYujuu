@@ -36,7 +36,7 @@ $resultado = $mysqli->query($sql);
 	<body>
 		<div class="container">
 			<div class="row">
-				<h1>Socios</h1>
+				<h1>Taller Yujuu</h1>
 			</div>
 			<br>
 			
@@ -52,6 +52,8 @@ $resultado = $mysqli->query($sql);
 						<th>Matricula</th>
 						<th>Marca</th>
 						<th>Modelo</th>
+						<th></th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -62,6 +64,8 @@ $resultado = $mysqli->query($sql);
 							 echo "<td>$fila[marca]</td>";
 							 echo "<td>$fila[modelo]</td>";
 							
+							 echo"<td><a href='reparaciones.php?id=$fila[id_coche]' class='btn btn-info'>Reparaciones</a></td>";
+							 echo"<td><a href='eliminar.php?id=$fila[id_coche]' class='btn btn-danger'>Eliminar</a></td>";
 						 echo "</tr>";
 					 }
 					 $mysqli->close();
