@@ -35,14 +35,15 @@
 
 		<body>
 			<h2>Iniciar sesión</h2>
-			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-				<label for="usuario">Usuario:</label><br>
+			<form method="post" action="">
+				<label for="usuario">Matricula:</label><br>
 				<input type="text" id="usuario" name="usuario"><br>
 				<label for="contrasena">Contraseña:</label><br>
 				<input type="password" id="contrasena" name="contrasena"> <br> <br>
 				<input type="submit" value="Iniciar sesión">
 			</form>
-			<form method="post" action="registar.php">
+
+			<form method="post" action="registrar.php">
 				<button type="submit" class="btn btn-success">Registarse</button>
 			</form>
 

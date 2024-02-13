@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -9,13 +9,17 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<title>Club Deportivo La Venta</title>
+	<title>Taller Yujuu</title>
 </head>
 
 <body>
 	<div class="container">
 		<div class="row">
-			<h1>Socios</h1>
+			<h1>Taller Yujuu</h1>
+		</div>
+
+		<div class="row">
+			<h2>Registrar</h2>
 		</div>
 
 		<div class="row">
@@ -23,17 +27,17 @@
 				<!-- Completar atributos de form -->
 				<form id="registro" name="registro" autocomplete="off" method="post" action="registrar2.php">
 					<div class="form-group">
-						<label for="nombre">Nombre:</label>
+						<label for="nombre">Marca</label>
 						<input type="text" id="nombre" name="nombre" class="form-control" required>
 					</div>
 
 					<div class="form-group">
-						<label for="telefono">Teléfono:</label>
+						<label for="telefono">Modelo:</label>
 						<input type="text" id="telefono" name="telefono" class="form-control" required>
 					</div>
 
 					<div class="form-group">
-						<label for="fecha_nac">Fecha nacimiento</label>
+						<label for="fecha_nac">Matricula</label>
 						<input type="date" id="fecha_nac" name="fecha_nac" class="form-control" required>
 					</div>
 
