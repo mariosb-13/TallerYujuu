@@ -19,7 +19,7 @@
 			   
 			require 'conexion.php';
 
-			$sql="INSERT INTO taller_yujuu (matricula,marca,modelo) VALUES ('$matricula','$marca','$modelo')";
+			$sql="INSERT INTO coche (matricula,marca,modelo) VALUES ('$matricula','$marca','$modelo')";
 
 			$resultado = $mysqli->query($sql);
 

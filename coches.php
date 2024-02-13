@@ -38,7 +38,7 @@
 
 					<div class="form-group">
 						<label for="matricula">Matricula</label>
-						<input type="number" id="matricula" name="matricula" class="form-control" required>
+						<input type="text" id="matricula" name="matricula" class="form-control" required>
 					</div>
 
 					<div class="form-group">
