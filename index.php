@@ -22,7 +22,7 @@ $resultado = $mysqli->query($sql);
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
 
-	<title>Club Deportivo La Venta</title>
+	<title>Taller Yujuu</title>
 
 	<script>
 		$(document).ready(function() {
@@ -35,18 +35,16 @@ $resultado = $mysqli->query($sql);
 
 <body>
 
-	<div class="container">
-		<h1>Taller Yujuu</h1>
+	<div class="container text-center">
+		<h1 class="text-center display-4">Taller Yujuu</h1>
 		<hr>
 
 		<body>
-			<h2>Iniciar sesión</h2>
 			<form method="post" action="comprobacion.php">
 				<label for="matricula">Matricula:</label><br>
-				<input type="text" id="matricula" name="matricula"><br>
-				<label for="contrasena">Contraseña:</label><br>
-				<input type="password" id="contrasena" name="contrasena"> <br><br>
-				<button type="button" class="btn btn-success">Iniciar sesion</button>
+				<input type="text" id="matricula" name="matricula" required><br>
+				<br>
+				<button type="submit" class="btn btn-success">Iniciar sesion</button>
 				<a href="coches.php"><button type="button" class="btn btn-primary">Registrar</button></a>
 			</form>
 

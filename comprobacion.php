@@ -12,7 +12,7 @@ require 'conexion.php';
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Club Deportivo La Venta</title>
+    <title>Taller Yujuu</title>
 </head>
 
 <body>
@@ -20,15 +20,13 @@ require 'conexion.php';
 
     $matricula = $_POST['matricula'];
 
-    $sql = "SELECT  * FROM coches WHERE matricula = $matricula";
+    $sql = "SELECT * FROM coche WHERE matricula LIKE '$matricula'";
     $resultado = $mysqli->query($sql);
 
-    $resultado = $mysqli->query($sql);
-
-    if ($resultado) {
-        echo "EXISTE";
+    if ($resultado>0) {
+        header("Location: reparaciones.php");
     } else {
-        echo "NO EXISTE";
+        header("Location: coches.php");
     }
     ?>
 </body>

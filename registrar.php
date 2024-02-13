@@ -15,7 +15,7 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<h1>Taller Yujuu</h1>
+			<h1 class="display-4">Taller Yujuu</h1>
 		</div>
 
 		<div class="row">
