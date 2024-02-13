@@ -19,10 +19,10 @@
             <div class="row">
                 <div class="col-md-8">
                 
-                    <form action="registrar2.php" id="registro" name="registro" autocomplete="off" method="post">
+                    <form action="coches2.php" id="registro" name="registro" autocomplete="off" method="post">
                         <div class="form-group">
                       
-                            <label for="Matrícula"> Matrícula </label>
+                            <label for="matricula"> Matrícula </label>
                             <input type="number" name="matricula" id="matricula" class="form-control" placeholder="Introduce la matricula" required>
                         </div>
                         
