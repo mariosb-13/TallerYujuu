@@ -37,7 +37,13 @@
 			
 				<form id="registro" name="registro" autocomplete="off" method="post" action="reparaciones.php">
 
-                
+                <div class="form-group">
+                            <label for="categoria">Matricula</label>
+                            <select name="categoria" id="categoria" class="form-control" required>
+                                <option value="amateur">AMATEUR</option>
+                                <option value="profesional">PROFESIONAL</option>
+                            </select>
+                        </div>
 
                 <div class="form-group">
                             <label for="categoria">Modelo</label>
