@@ -25,7 +25,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<!-- Completar atributos de form -->
-				<form id="registro" name="registro" autocomplete="off" method="post" action="registrar2.php">
+				<form id="registro" name="registro" autocomplete="off" method="post" action="index.php">
 					<div class="form-group">
 						<label for="nombre">Marca</label>
 						<input type="text" id="nombre" name="nombre" class="form-control" required>
@@ -38,16 +38,7 @@
 
 					<div class="form-group">
 						<label for="fecha_nac">Matricula</label>
-						<input type="date" id="fecha_nac" name="fecha_nac" class="form-control" required>
-					</div>
-
-					<div class="form-group">
-						<label for="categoria">Categoria</label>
-						<select name="categoria" id="categoria" class="form-control" required>
-							<option value="AMATEUR">AMATEUR</option>
-							<option value="PROFESIONAL">PROFESIONAL</option>
-						</select>
-						<input type="hidden" name="id" value="<?php echo $fila['id'] ?>">
+						<input type="text" id="fecha_nac" name="fecha_nac" maxlength=7 class="form-control" required>
 					</div>
 
 					<div class="form-group">
