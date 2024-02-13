@@ -24,25 +24,25 @@
 
 		<div class="row">
 			<div class="col-md-8">
-				<!-- Completar atributos de form -->
-				<form id="registro" name="registro" autocomplete="off" method="post" action="registrar2.php">
+			
+				<form id="registro" name="registro" autocomplete="off" method="post" action="coches2.php">
 					<div class="form-group">
-						<label for="nombre">Marca</label>
-						<input type="text" id="nombre" name="nombre" class="form-control" required>
+						<label for="marca">Marca</label>
+						<input type="text" id="marca" name="marca" class="form-control" required>
 					</div>
 
 					<div class="form-group">
-						<label for="telefono">Modelo</label>
-						<input type="text" id="telefono" name="telefono" class="form-control" required>
+						<label for="modelo">Modelo</label>
+						<input type="text" id="modelo" name="modelo" class="form-control" required>
 					</div>
 
 					<div class="form-group">
-						<label for="fecha_nac">Matricula</label>
-						<input type="date" id="fecha_nac" name="fecha_nac" class="form-control" required>
+						<label for="matricula">Matricula</label>
+						<input type="number" id="matricula" name="matricula" class="form-control" required>
 					</div>
 
 					<div class="form-group">
-						<input type="submit" class="btn btn-primary" value="Registrar">
+						<input type="submit" class="btn btn-primary" value="Registrar coche">
 					</div>
 				</form>
 			</div>
