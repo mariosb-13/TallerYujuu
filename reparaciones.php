@@ -2,11 +2,9 @@
 <html lang="es">
 
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
 	<title>Taller Yujuu</title>
@@ -20,7 +18,7 @@
         } else {
             $matricula = $_POST["matricula"];
             require 'reparaciones.php';
-            $sql = "SELECT * FROM provincias WHERE id_comunidad = $id_comunidad ORDER BY nombre";
+            $sql = "SELECT * FROM coche WHERE matricula = $matricula";
             $resultado = $mysqli->query($sql);
         }
     ?>
@@ -39,9 +37,10 @@
 			
 				<form id="registro" name="registro" autocomplete="off" method="post" action="reparaciones.php">
 
+                
+
                 <div class="form-group">
-                            <!-- Categoría -->
-                            <label for="categoria">Categoría</label>
+                            <label for="categoria">Modelo</label>
                             <select name="categoria" id="categoria" class="form-control" required>
                                 <option value="amateur">AMATEUR</option>
                                 <option value="profesional">PROFESIONAL</option>
@@ -49,10 +48,18 @@
                         </div>
 
                     <div class="form-group">
-                            <label for="categoria">Categoría</label>
+                            <label for="categoria">Piezas</label>
                             <select name="categoria" id="categoria" class="form-control" required>
-                                <option value="amateur">AMATEUR</option>
-                                <option value="profesional">PROFESIONAL</option>
+                                <option value="culata">Culata</option>
+                                <option value="embrague">Embrague</option>
+                                <option value="cigueñal">Cigüeñal</option>
+                                <option value="correa">Correa Distribucion</option>
+                                <option value="bateria">Batería</option>
+                                <option value="aceite">Cambio de aceite</option>
+                                <option value="arranque">Arranque motor</option>
+                                <option value="filtro">Filtros</option>
+                                <option value="motor">Motor</option>
+
                             </select>
                         </div>
 
