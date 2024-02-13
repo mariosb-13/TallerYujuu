@@ -1,3 +1,11 @@
+<?php
+require 'conexion.php';
+
+$sql = "SELECT * FROM coche";
+
+$resultado = $mysqli->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,8 +18,6 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
@@ -35,23 +41,15 @@
 
 		<body>
 			<h2>Iniciar sesión</h2>
-			<form method="post" action="">
-				<label for="usuario">Matricula:</label><br>
-				<input type="text" id="usuario" name="usuario"><br>
+			<form method="post" action="comprobacion.php">
+				<label for="matricula">Matricula:</label><br>
+				<input type="text" id="matricula" name="matricula"><br>
 				<label for="contrasena">Contraseña:</label><br>
-				<input type="password" id="contrasena" name="contrasena"> <br> <br>
-				<input type="submit" value="Iniciar sesión">
+				<input type="password" id="contrasena" name="contrasena"> <br><br>
+				<button type="button" class="btn btn-success">Iniciar sesion</button>
+				<a href="coches.php"><button type="button" class="btn btn-primary">Registrar</button></a>
 			</form>
 
-			<form method="post" action="registrar.php">
-				<button type="submit" class="btn btn-success">Registarse</button>
-			</form>
-
-			<?php
-			if (isset($error)) {
-				echo "<p>$error</p>";
-			}
-			?>
 		</body>
 	</div>
 
