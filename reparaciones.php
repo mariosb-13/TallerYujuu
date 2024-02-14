@@ -1,7 +1,9 @@
 <?php
 require 'conexion.php';
 
-$sql = "SELECT * FROM reparaciones";
+$id=$_GET['id'];
+
+$sql = "SELECT * FROM reparaciones where id_coche='$id' LIMIT 1";
 
 $resultado = $mysqli->query($sql);
 ?>
@@ -50,7 +52,7 @@ $resultado = $mysqli->query($sql);
 			<table id="tabla" class="display" style="width:100%">
 				<thead>
 					<tr>
-						<th>Id_pieza</th>
+						<th>Reparación</th>
 						<th>Fecha</th>
 						<th>Coste</th>
 					</tr>
@@ -59,7 +61,7 @@ $resultado = $mysqli->query($sql);
 					<?php
 					 while($fila =$resultado->fetch_assoc()){
 						 echo "<tr>";
-							 echo "<a href='piezas.php'><td>$fila[id_pieza]</td></a>";
+							 echo "<td>$fila[Nombre_pieza]</td>";
 							 echo "<td>$fila[fecha]</td>";
 							 echo "<td>$fila[coste]</td>";
 							
