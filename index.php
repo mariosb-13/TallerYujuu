@@ -49,10 +49,9 @@ $resultado = $mysqli->query($sql);
 			<table id="tabla" class="display" style="width:100%">
 				<thead>
 					<tr>
-						<th>Nombre</th>
-						<th>Telefono</th>
-						<th>Fecha de nacimiento</th>
-						<th>Categoría</th>
+						<th>Matricula</th>
+						<th>Marca</th>
+						<th>Modelo</th>
 						<th></th>
 						<th></th>
 					</tr>
@@ -61,13 +60,12 @@ $resultado = $mysqli->query($sql);
 					<?php
 					 while($fila =$resultado->fetch_assoc()){
 						 echo "<tr>";
-							 echo "<td>$fila[nombre]</td>";
-							 echo "<td>$fila[telefono]</td>";
-							 echo "<td>$fila[fecha_nacimiento]</td>";
-							 echo "<td>$fila[categoria]</td>";
+							 echo "<td>$fila[matricula]</td>";
+							 echo "<td>$fila[marca]</td>";
+							 echo "<td>$fila[modelo]</td>";
 							
-							 echo"<td><a href='editar.php?id=$fila[id]' class='btn btn-warning'>Editar</a></td>";
-							 echo"<td><a href='eliminar.php?id=$fila[id]' class='btn btn-danger'>Eliminar</a></td>";
+							 echo"<td><a href='reparaciones.php?id=$fila[id_coche]' class='btn btn-info'>Reparaciones</a></td>";
+							 echo"<td><a href='eliminar.php?id=$fila[id_coche]' class='btn btn-danger'>Eliminar</a></td>";
 						 echo "</tr>";
 					 }
 					 $mysqli->close();
