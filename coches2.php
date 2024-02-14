@@ -24,7 +24,7 @@
 			$resultado = $mysqli->query($sql);
 
 			if($resultado>0){
-				echo "<div class='alert alert-primary' role='alert'> Coche agregado </div>";
+				echo "<div class='alert alert-primary' role='alert'> Coche agregado correctamente</div>";
 			}else{
 				echo "<p>Ha habido un error al agregar el coche</p>";	
 			}
