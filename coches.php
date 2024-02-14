@@ -53,5 +53,4 @@
 	<script src="js/bootstrap.min.js"></script>
 </body>
 
->>>>>>> Coches.php
 </html>

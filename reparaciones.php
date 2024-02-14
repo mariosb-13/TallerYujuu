@@ -42,13 +42,6 @@ $resultado = $mysqli->query($sql);
 			</div>
 			<br>
 			
-			
-			<div class="row">
-			<a href="registrar.php"><button type="button" class="btn btn-primary">Registrar</button></a>
-			</div>
-			<br>
-			<br>
-			
 			<table id="tabla" class="display" style="width:100%">
 				<thead>
 					<tr>
