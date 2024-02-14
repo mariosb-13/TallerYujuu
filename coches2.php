@@ -8,7 +8,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		
-		<title>Talleres Yujuu</title>
+		<title>Taller Yujuu</title>
 	</head>
 	<body>
 		<?php

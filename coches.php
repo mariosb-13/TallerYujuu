@@ -14,12 +14,9 @@
 
 <body>
 	<div class="container">
-		<div class="row">
-			<h1>Taller Yujuu</h1>
-		</div>
 
 		<div class="row">
-			<h2>Registrar</h2>
+			<h2 class="display-4">Registrar coche</h2>
 		</div>
 
 		<div class="row">

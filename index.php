@@ -23,7 +23,7 @@ $resultado = $mysqli->query($sql);
 		<script src="js/bootstrap.min.js" ></script>
 		<script src="js/jquery.dataTables.min.js" ></script>
 		
-		<title>Club Deportivo La Venta</title>
+		<title>Taller Yujuu</title>
 		
 		<script>
 			$(document).ready( function(){
@@ -36,7 +36,7 @@ $resultado = $mysqli->query($sql);
 	<body>
 		<div class="container">
 			<div class="row">
-				<h1>Taller Yujuu</h1>
+				<h1 class="display-3 ">Taller Yujuu</h1>
 			</div>
 			<br>
 			
