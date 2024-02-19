@@ -9,18 +9,27 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
 
 	<title>Taller Yujuu</title>
 </head>
 
 <style>
+	/* * {
+		color:white;
+	} */
+
+	tbody{
+		color:black;
+	}
+
+	h2, label{
+		color: white;
+	}
+
 	body {
 		background-image: url("imagenes/fondo.jpg");
-		bac
 		background-repeat: no-repeat;
 		background-size: cover;
-
 		/* Esto asegura que la imagen se ajuste al tamaño del contenedor */
 	}
 </style>
@@ -34,7 +43,7 @@
 
 		<div class="row">
 			<div class="col-md-8">
-			
+
 				<form id="registro" name="registro" autocomplete="off" method="post" action="coches2.php">
 					<div class="form-group">
 						<label for="marca">Marca</label>

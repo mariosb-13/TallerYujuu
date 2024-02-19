@@ -11,6 +11,16 @@
 		
 		<title>Taller Yujuu</title>
 	</head>
+
+	<style>
+		
+	body {
+		background-image: url("imagenes/fondo.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* Esto asegura que la imagen se ajuste al tamaño del contenedor */
+	}
+</style>
 	<body>
 		<?php
 			

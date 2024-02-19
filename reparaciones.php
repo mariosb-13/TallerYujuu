@@ -36,6 +36,28 @@ $resultado = $mysqli->query($sql);
 		
 		
 	</head>
+
+	<style>
+	/* * {
+		color:white;
+	} */
+
+	tbody{
+		color:black;
+	}
+
+	th, h1{
+		color: white;
+	}
+
+	body {
+		background-image: url("imagenes/fondo.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* Esto asegura que la imagen se ajuste al tamaño del contenedor */
+	}
+</style>
+
 	<body>
 		<div class="container">
 			<div class="row">
