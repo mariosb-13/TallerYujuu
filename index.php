@@ -16,6 +16,7 @@ $resultado = $mysqli->query($sql);
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
 		
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
