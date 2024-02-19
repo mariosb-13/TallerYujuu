@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-02-2024 a las 13:06:47
+-- Tiempo de generación: 19-02-2024 a las 14:49:30
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -40,7 +40,11 @@ CREATE TABLE `coche` (
 
 INSERT INTO `coche` (`id_coche`, `marca`, `modelo`, `matricula`) VALUES
 (1, 'BMW', 'X8', '1234ZXC'),
-(2, 'AUDI', 'R8', '0001BBB');
+(2, 'AUDI', 'R8', '0001BBB'),
+(11, 'SEAT', 'LEON', '1234MMM'),
+(12, 'PEUGEOT', '208', '5478BBD'),
+(13, 'ALFA ROMEO', 'TONALE', '3256LKJ'),
+(14, 'MERCEDES', 'AMG ', '8954KLM');
 
 -- --------------------------------------------------------
 
@@ -124,7 +128,7 @@ ALTER TABLE `reparaciones`
 -- AUTO_INCREMENT de la tabla `coche`
 --
 ALTER TABLE `coche`
-  MODIFY `id_coche` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_coche` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `piezas`
