@@ -3,7 +3,7 @@ require 'conexion.php';
 
 $id=$_GET['id'];
 
-$sql = "SELECT * FROM reparaciones where id_coche='$id' LIMIT 1";
+$sql = "SELECT * FROM reparaciones where id_coche='$id'";
 
 $resultado = $mysqli->query($sql);
 ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-02-2024 a las 14:49:30
+-- Tiempo de generación: 20-02-2024 a las 14:46:25
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -65,7 +65,12 @@ CREATE TABLE `piezas` (
 
 INSERT INTO `piezas` (`id_pieza`, `nombre`, `descripcion`, `precio`) VALUES
 (1, 'Motor', 'Motor de BMW', 500),
-(2, 'Pastilla Freno', 'Frenos de audi', 100);
+(2, 'Pastilla Freno', 'Frenos de audi', 100),
+(3, 'Cambio levas', 'Levas', 300),
+(4, 'Tubo Escape', 'Limpieza tubo escape', 75),
+(5, 'Aceite', 'Cambio de aceite', 20),
+(6, 'Repro', 'Reprogramación centralita', 700),
+(7, 'Filtro', 'Cambio de filtro', 50);
 
 -- --------------------------------------------------------
 
@@ -88,7 +93,12 @@ CREATE TABLE `reparaciones` (
 
 INSERT INTO `reparaciones` (`id_reparacion`, `id_coche`, `id_pieza`, `Nombre_pieza`, `fecha`, `coste`) VALUES
 (1, 1, 1, 'Cambio de Motor ', '2024-02-07', 1000),
-(2, 2, 2, 'Renovación de pastillas de freno', '2017-01-03', 120);
+(2, 2, 2, 'Renovación de pastillas de freno', '2017-01-03', 120),
+(3, 13, 3, 'Levas', '2015-02-10', 350),
+(4, 12, 4, 'Limpieza Tubo Escape', '2024-02-01', 100),
+(5, 12, 5, 'Cambio Aceite Motor', '2023-08-23', 65),
+(6, 14, 6, 'Reprogramación centralita', '2014-02-14', 1200),
+(7, 11, 7, 'Cambio de filtro', '2022-10-19', 95);
 
 --
 -- Índices para tablas volcadas
@@ -134,13 +144,13 @@ ALTER TABLE `coche`
 -- AUTO_INCREMENT de la tabla `piezas`
 --
 ALTER TABLE `piezas`
-  MODIFY `id_pieza` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pieza` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `reparaciones`
 --
 ALTER TABLE `reparaciones`
-  MODIFY `id_reparacion` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_reparacion` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restricciones para tablas volcadas
